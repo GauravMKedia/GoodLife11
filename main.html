@@ -22,6 +22,7 @@
                     <div class="info">
                         <h1 class="day-name">Rose Day</h1>
                         <p class="date">Feb 07</p>
+                        <div class="countdown" id="countdown-rose"></div>
                     </div>
                 </div>
             </a>
@@ -33,6 +34,7 @@
                     <div class="info">
                         <h1 class="day-name">Propose Day</h1>
                         <p class="date">Feb 08</p>
+                        <div class="countdown" id="countdown-propose"></div>
                     </div>
                 </div>
             </a>
@@ -44,6 +46,7 @@
                     <div class="info">
                         <h1 class="day-name">Chocolate Day</h1>
                         <p class="date">Feb 09</p>
+                        <div class="countdown" id="countdown-chocolate"></div>
                     </div>
                 </div>
             </a>
@@ -55,6 +58,7 @@
                     <div class="info">
                         <h1 class="day-name">Teddy Day</h1>
                         <p class="date">Feb 10</p>
+                        <div class="countdown" id="countdown-teddy"></div>
                     </div>
                 </div>
             </a>
@@ -66,6 +70,7 @@
                     <div class="info">
                         <h1 class="day-name">Promise Day</h1>
                         <p class="date">Feb 11</p>
+                        <div class="countdown" id="countdown-promise"></div>
                     </div>
                 </div>
             </a>
@@ -77,6 +82,7 @@
                     <div class="info">
                         <h1 class="day-name">Hug Day</h1>
                         <p class="date">Feb 12</p>
+                        <div class="countdown" id="countdown-hug"></div>
                     </div>
                 </div>
             </a>
@@ -88,6 +94,7 @@
                     <div class="info">
                         <h1 class="day-name">Kiss Day</h1>
                         <p class="date">Feb 13</p>
+                        <div class="countdown" id="countdown-kiss"></div>
                     </div>
                 </div>
             </a>
@@ -99,6 +106,7 @@
                     <div class="info">
                         <h1 class="day-name">Valentine Day</h1>
                         <p class="date">Feb 14</p>
+                        <div class="countdown" id="countdown-valentine"></div>
                     </div>
                 </div>
             </a>
@@ -130,7 +138,7 @@
                 function updateCountdown() {
                     const timeDiff = dayDate - new Date(); // Use current time dynamically
                     if (timeDiff <= 0) {
-                        countdownElement.textContent = 'This day is now available!';
+                        countdownElement.textContent = '';
                         clearInterval(interval);
                         return;
                     }
