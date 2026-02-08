@@ -138,6 +138,7 @@
         // Listen for a message from child pages (e.g. index.html) to start the music.
         window.addEventListener('message', function (e) {
             if (e.data === 'startMusic') {
+                debugger;
                 if (audioDom.paused) {
                     audioDom.play();
                     musicCloseDom.classList.add('rotate');

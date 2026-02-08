@@ -19,11 +19,6 @@ fetch('config.json')
     fpName.innerText = config.fpName;
     spName.innerText = config.spName;
 
-    // Update Instagram profile link and name.
-    const instagramProfileLink = document.getElementById('instagramProfileLink');
-    const instagramProfileNameElement = document.getElementById('instagramProfileName');
-    instagramProfileLink.href = `https://instagram.com/${config.instagramUsername}`;
-    instagramProfileNameElement.textContent = config.instagramProfileName;
     
     
   })

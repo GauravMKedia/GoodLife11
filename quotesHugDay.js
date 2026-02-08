@@ -14,12 +14,6 @@ fetch('config.json')
     // Use the configuration values
     const fpNameEl = document.querySelector("#fpname");
     const spNameEl = document.querySelector("#spname");
-
-    // Update Instagram profile link and name.
-    const instagramProfileLink = document.getElementById('instagramProfileLink');
-    const instagramProfileNameElement = document.getElementById('instagramProfileName');
-    instagramProfileLink.href = `https://instagram.com/${config.instagramUsername}`;
-    instagramProfileNameElement.textContent = config.instagramProfileName;
     
     fpNameEl.innerText = config.fpName;
     spNameEl.innerText = config.spName;

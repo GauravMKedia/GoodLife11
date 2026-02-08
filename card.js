@@ -10,12 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
     .then(config => {
       const spNameStored = config.spName;
       const fpNameStored = config.fpName;
-      
-      // Update Instagram profile link and name.
-    const instagramProfileLink = document.getElementById('instagramProfileLink');
-    const instagramProfileNameElement = document.getElementById('instagramProfileName');
-    instagramProfileLink.href = `https://instagram.com/${config.instagramUsername}`;
-    instagramProfileNameElement.textContent = config.instagramProfileName;
     
       const spNameWritten = document.querySelector("#spName");
       const fpNameWritten = document.querySelector("#fpName");
